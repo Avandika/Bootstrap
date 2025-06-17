@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+            background-image: url(https://www.holidify.com/images/bgImages/MUNNAR.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        @keyframes marquee{
+            from{
+                transform: translateX(100%);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+        .marquee-text{
+            display: inline-block;
+            white-space:nowrap;
+            overflow: hidden;
+            animation: marquee 10s linear infinite;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            /* text-decoration: overline; */
+            text-decoration: underline;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #ff0000;">Web Technlogy</h1>
+    <h2 style="color: rgb(0, 255, 0);">Web Technlogy</h2>
+    <h3 style="color: rgba(0, 0, 255, 0.5);">Web Technlogy</h3>
+    <h4 style="color: hsl(240, 100%, 70%);">Web Technlogy</h4>
+    <div class="marquee-text">
+        <h3>hello</h3>
+    </div>
+</body>
+</html>

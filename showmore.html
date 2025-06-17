@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Show More / Show Less</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-5">
+
+  <div class="container">
+    <h3>Show More / Show Less Example</h3>
+    <p>
+      This is some visible content. 
+      <span id="moreText" class="collapse">
+        Here is the hidden content that will be shown or hidden when the button is clicked. You can put paragraphs, images, or anything here.
+      </span>
+    </p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#moreText" aria-expanded="false" aria-controls="moreText" onclick="toggleButtonText(this)">
+      Show More
+    </button>
+  </div>
+
+  <script>
+    function toggleButtonText(button) {
+      const textSpan = document.getElementById("moreText");
+      if (textSpan.classList.contains("show")) {
+        button.textContent = "Show More";
+      } else {
+        button.textContent = "Show Less";
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
